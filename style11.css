@@ -43,6 +43,11 @@ a {
     color: var(--primary-green);
 }
 
+p {
+    color: var(--text-color); /* Zapewniamy, że akapity używają ciemniejszego koloru */
+    margin-bottom: 1em;
+}
+
 ul {
     list-style: none;
 }
@@ -131,9 +136,9 @@ ul {
 }
 
 .hero-content p {
-    font-size: 1.5em;
-    margin-bottom: 2em;
     color: transparent;
+    font-size: 1.6em; /* Delikatnie zwiększony rozmiar czcionki */
+    font-weight: 600;
 }
 
 .hero-van-image {
@@ -210,6 +215,12 @@ ul {
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
+.feature-item p {
+    font-weight: 600;
+    font-size: 1.1em; /* Zmień to */
+    color: var(--text-color);
+}
+
 .feature-item i {
     font-size: 3em;
     color: var(--primary-green);
@@ -267,6 +278,9 @@ ul {
 .review-card .review-text {
     font-style: italic;
     margin-bottom: 15px;
+    color: var(--dark-grey);
+    font-size: 1.1em; /* Zwiększony rozmiar dla lepszej czytelności opinii */
+    font-weight: 500;
 }
 
 .review-card .reviewer-name {
@@ -337,6 +351,8 @@ ul {
     align-items: center;
     gap: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    font-weight: 600;
+    font-size: 1.1em; /* Zmień to */
 }
 
 .what-we-do-content .right-column li i {
@@ -365,8 +381,10 @@ ul {
 }
 
 .quick-access-content .text-block p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: 1.5em;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .quick-access-content .text-block a {
@@ -413,6 +431,12 @@ ul {
 .express-repair-content .text-block-right h2 {
     color: var(--dark-grey);
     text-align: center;
+}
+
+.express-repair-content .text-block-right p {
+   font-weight: 600;
+    font-size: 1.1em; /* Zmień to */
+    color: var(--text-color);
 }
 
 /* Map Section */
@@ -638,9 +662,7 @@ ul {
         max-width: 130px;
     }
     
-    .footer {
-        padding: 15px 0;
-    }
+    
     .contact-header a {
         font-size: 1em;
     }
