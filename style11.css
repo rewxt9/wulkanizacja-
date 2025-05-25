@@ -589,6 +589,7 @@ ul {
     .header .container {
         flex-direction: row;
         gap: 15px;
+        flex-wrap: wrap;
     }
      .hero-section {
     background-image: url("ChatGPT\ Image\ 25\ трав.\ 2025\ р.\,\ 12_13_06.png");
