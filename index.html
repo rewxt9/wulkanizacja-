@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wulkanizacja Mobilna</title>
-    <link rel="stylesheet" href="style11.css">
+    <link rel="stylesheet" href="style45.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header class="header">
         <div class="container">
             <div class="logo">
                 <img src="ChatGPT Image 25 трав. 2025 р., 10_12_55.png" alt="Logo firmy" class="logo-header">
             </div>
+            
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+
             <nav class="main-nav">
                 <ul>
                     <li><a href="#">HOME</a></li>
@@ -28,6 +32,7 @@
             </div>
         </div>
     </header>
+
 
     <section class="hero-section">
         <div class="container">
@@ -323,6 +328,32 @@
             });
         });
     });
+
+     
+
+    // Skrypt dla hamburger menu
+        const hamburger = document.querySelector('.hamburger');
+        const mainNav = document.querySelector('.main-nav');
+
+        hamburger.addEventListener('click', function(e) {
+            e.stopPropagation();
+            mainNav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        document.addEventListener('click', function(e) {
+            if(mainNav.classList.contains('active')) {
+                mainNav.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+
+        mainNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
     </script>
 </body>
 </html>
