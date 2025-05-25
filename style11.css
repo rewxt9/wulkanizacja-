@@ -648,6 +648,10 @@ ul {
     .review-card {
         flex: 0 0 calc(50% - 15px);
     }
+    .footer-nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
 }
 
 @media (max-width: 480px) {
