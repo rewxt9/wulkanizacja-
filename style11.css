@@ -648,10 +648,16 @@ ul {
     .review-card {
         flex: 0 0 calc(50% - 15px);
     }
+
+    .icon-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
     .footer-nav ul {
-        flex-direction: row;
-        gap: 10px;
-    }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
 }
 
 @media (max-width: 480px) {
@@ -702,7 +708,9 @@ ul {
     }
 
     .footer-nav ul {
-        flex-direction: row;
-        gap: 10px;
-    }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
 }
