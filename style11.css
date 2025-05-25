@@ -587,7 +587,7 @@ ul {
 
 @media (max-width: 767px) {
     .header .container {
-        flex-direction: column;
+        flex-direction: row;
         gap: 15px;
     }
      .hero-section {
