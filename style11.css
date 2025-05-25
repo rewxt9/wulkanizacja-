@@ -1,12 +1,12 @@
 /* General Styling */
 :root {
-    --primary-green: #90d800; /* A vibrant green from the images */
-    --secondary-green: #6aa84f; /* A darker green for accents */
+    --primary-green: #90d800; 
+    --secondary-green: #6aa84f; 
     --dark-grey: #333;
     --light-grey: #f4f4f4;
     --text-color: #555;
     --white: #fff;
-    --blue-accent: #3b5998; /* For "Czym się zajmujemy?" section */
+    --blue-accent: #3b5998; 
 }
 
 * {
@@ -57,18 +57,23 @@ ul {
 .header {
     background-color: var(--dark-grey);
     color: var(--white);
-    padding: 15px 0;
+    padding: 8px 0; /* Zmniejszony padding z 15px */
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
+/* Zmodyfikowane style dla logo */
 .logo-header,
 .logo-footer {
-    width: 100px;
-    height: 100px;
-    border-radius: 40%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   height: 80px; /* Zmniejszono z 80px */
+    width: auto;
+    max-width: 150px; /* Zmniejszono z 180px */
+}
+
+.header .logo img,
+.footer-logo img {
+    max-height: 80px; /* Zmniejszono z 80px */
 }
 
 .header .container {
@@ -76,10 +81,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.header .logo img {
-    height: 50px;
+   
 }
 
 .main-nav ul {
@@ -305,12 +307,10 @@ ul {
 .what-we-do-content .left-column img {
     border-radius: 8px;
     box-shadow: 0 5px 9px rgba(0,0,0,0.1);
-    
 }
 
 .what-we-do-content .left-column{
     padding-top: 15px;
-    
 }
 
 .what-we-do-content .right-column h2 {
@@ -438,10 +438,9 @@ ul {
 
 /* Footer */
 .footer {
-    background-color: var(--dark-grey);
+   background-color: var(--dark-grey);
     color: var(--white);
-    padding: 30px 0;
-    text-align: center;
+    padding: 20px 0; /* Zmniejszony padding z 30px */
 }
 
 .footer .container {
@@ -478,14 +477,10 @@ ul {
     font-size: 1.2em;
 }
 
-.footer-logo img {
-    height: 40px;
-    margin-top: 10px;
-}
-
-.logo {
+/* Usunięto border-radius dla logo */
+/* .logo {
     border-radius: 50%;
-}
+} */
 
 /* Responsive Design */
 @media (min-width: 768px) {
@@ -618,9 +613,18 @@ ul {
 
 @media (max-width: 480px) {
     .header .logo img {
-        height: 40px;
+        height: 35px;
     }
 
+    .logo-header,
+    .logo-footer {
+        height: 50px;
+        max-width: 130px;
+    }
+    
+    .footer {
+        padding: 15px 0;
+    }
     .contact-header a {
         font-size: 1em;
     }
