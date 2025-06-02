@@ -249,11 +249,38 @@ ul {
     background: #ccff00;
 }
 
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.counter {
+    font-size: 3em;
+    color: var(--primary-green);
+}
+
+.stats-container p{
+     font-weight: 600;
+    font-size: 1.1em; /* Zmień to */
+    color: var(--text-color);
+}
+
+
+
+
+
 .quality-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .quality-item img {
