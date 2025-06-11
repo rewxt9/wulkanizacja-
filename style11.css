@@ -22,7 +22,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+     font-family: "Oswald", sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--white);
@@ -49,7 +49,7 @@ a {
 }
 
 p {
-    color: var(--text-color); /* Zapewniamy, że akapity używają ciemniejszego koloru */
+    color: var(--text-color); 
     margin-bottom: 1em;
 }
 
@@ -63,36 +63,37 @@ ul {
     display: block;
 }
 
-/* Header */
+
 .header {
-    background-color: var(--dark-grey);
-    color: var(--white);
+    background-color: #f4f4f4;
+    color: rgb(0,35,135);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
+
 .hamburger {
     display: none;
     background: none;
     border: none;
-    color: white;
+    color: rgb(0,35,135);
     font-size: 24px;
     cursor: pointer;
     order: 2;
 }
 
-/* Zmodyfikowane style dla logo */
+
 .logo-header,
 .logo-footer {
-   height: 90px; /* Zmniejszono z 80px */
+   height: 150px; 
     width: auto;
-    max-width: 150px; /* Zmniejszono z 180px */
+    max-width: 150px; 
 }
 
 .header .logo img,
 .footer-logo img {
-    max-height: 90px; /* Zmniejszono z 80px */
+    max-height: 90px; 
 }
 
 .header .container {
@@ -132,9 +133,11 @@ ul {
 }
 
 .main-nav a {
-    color: var(--white);
+    color: rgb(0,35,135);
     font-weight: 600;
     transition: color 0.3s ease;
+    font-weight: 700;
+    letter-spacing: 0.3px;
 }
 
 .main-nav a:hover {
@@ -142,7 +145,7 @@ ul {
 }
 
 .contact-header a {
-    color: var(--primary-green);
+    color: rgb(0,35,135);
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -151,9 +154,10 @@ ul {
 
 .contact-header i {
     font-size: 1.2em;
+    color: #90d800;
 }
 
-/* Hero Section */
+
 .hero-section {
     background-image: url("ChatGPT\ Image\ 25\ трав.\ 2025\ р.\,\ 11_47_03.png");
     background-position: right bottom;
@@ -176,7 +180,7 @@ ul {
 
 .hero-content p {
     color: transparent;
-    font-size: 1.6em; /* Delikatnie zwiększony rozmiar czcionki */
+    font-size: 1.6em; 
     font-weight: 600;
 }
 .status-indicator {
@@ -211,9 +215,9 @@ ul {
     z-index: 1;
 }
 
-/* What We Do Icons */
+
 .what-we-do-icons {
-    background-color: var(--light-grey);
+    background-color:  #ccff00;
     padding: 40px 0;
 }
 
@@ -238,7 +242,7 @@ ul {
     transform: translateY(-5px);
 }
 
-/* Quality Section */
+
 .quality-section {
     padding: 60px 0;
     text-align: center;
@@ -268,7 +272,7 @@ ul {
 
 .stats-container p{
      font-weight: 600;
-    font-size: 1.1em; /* Zmień to */
+    font-size: 1.1em; 
     color: var(--text-color);
 }
 
@@ -304,7 +308,7 @@ ul {
 
 .feature-item p {
     font-weight: 600;
-    font-size: 1.1em; /* Zmień to */
+    font-size: 1.1em; 
     color: var(--text-color);
 }
 
@@ -320,7 +324,7 @@ ul {
     font-size: 1.4em;
 }
 
-/* Reviews Slider Section */
+
 #reviews-section {
     background-color: var(--light-grey);
     padding: 60px 0;
@@ -366,7 +370,7 @@ ul {
     font-style: italic;
     margin-bottom: 15px;
     color: var(--dark-grey);
-    font-size: 1.1em; /* Zwiększony rozmiar dla lepszej czytelności opinii */
+    font-size: 1.1em; 
     font-weight: 500;
 }
 
@@ -395,7 +399,7 @@ ul {
     background-color: var(--primary-green);
 }
 
-/* What We Do Section */
+
 #what-we-do-section {
     padding: 70px 0;
     background-color: var(--white);
@@ -439,14 +443,14 @@ ul {
     gap: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     font-weight: 600;
-    font-size: 1.1em; /* Zmień to */
+    font-size: 1.1em; 
 }
 
 .what-we-do-content .right-column li i {
     color: var(--primary-green);
 }
 
-/* Quick Access Section */
+
 #quick-access-section {
     background: #ccff00;
     color: var(--white);
@@ -479,12 +483,16 @@ ul {
     align-items: center;
     gap: 10px;
     background-color: var(--white);
-    color: var(--primary-green);
+    color: rgb(0,35,135);
     padding: 15px 30px;
     border-radius: 50px;
     font-size: 1.5em;
     font-weight: 700;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.quick-access-content .text-block i{
+    color: #90d800;
 }
 
 .quick-access-content .text-block a:hover {
@@ -497,7 +505,7 @@ ul {
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Express Repair Section */
+
 .express-repair-section {
     padding: 60px 0;
     background-color: var(--white);
@@ -522,11 +530,11 @@ ul {
 
 .express-repair-content .text-block-right p {
    font-weight: 600;
-    font-size: 1.1em; /* Zmień to */
+    font-size: 1.1em; 
     color: var(--text-color);
 }
 
-/* Map Section */
+
 .map-section {
     padding: 60px 0;
     background-color: var(--light-grey);
@@ -550,10 +558,9 @@ ul {
     height: 100%;
 }
 
-/* Footer */
 .footer {
-   background-color: var(--dark-grey);
-    color: var(--white);
+   background-color: #f4f4f4;
+    color: rgb(0,35,135);
 }
 
 .footer .container {
@@ -572,7 +579,7 @@ ul {
 }
 
 .footer-nav a {
-    color: var(--white);
+    color: rgb(0,35,135);
     font-weight: 600;
     transition: color 0.3s ease;
 }
@@ -582,7 +589,7 @@ ul {
 }
 
 .footer-contact a {
-    color: var(--primary-green);
+    color: rgb(0,35,135);
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -590,13 +597,13 @@ ul {
     font-size: 1.2em;
 }
 
-/* Usunięto border-radius dla logo */
-/* .logo {
-    border-radius: 50%;
-} */
+.footer-contact i{
+    color: #90d800;
+}
 
-/* Responsive Design */
+
 @media (min-width: 768px) {
+
     .header .container {
         flex-wrap: wrap;
     }
@@ -674,6 +681,10 @@ ul {
 }
 
 @media (max-width: 767px) {
+    .header .logo img {
+        height: 95px;
+        width: 130px;
+    }
     .header .container {
         flex-direction: row;
         gap: 15px;
@@ -688,18 +699,18 @@ ul {
 
     .main-nav {
         position: fixed;
-        top: 90px; /* Dostosuj do wysokości header-a */
+        top: 90px; 
         left: -100%;
         width: 100%;
         height: calc(100vh - 90px);
-        background: var(--dark-grey);
+        background: #f4f4f4;
         transition: 0.3s ease;
         padding: 20px 0;
         z-index: 1000;
     }
 
     .main-nav.active {
-        left: 0; /* Wysuwa menu na ekran */
+        left: 0; 
     }
      .hero-section {
     position: relative;
@@ -712,12 +723,13 @@ ul {
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url("foto1.webp");
+        background-image: url("brud-na-kole-mechanik-trzymajacy-opone-w-warsztacie-naprawczym-wymiana-opon-zimowych-i-letnich.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         filter: blur(3px);
         z-index: 1;
+        object-fit: contain;
     }
     .main-nav ul {
         flex-direction: column;
@@ -738,7 +750,7 @@ ul {
     }
 
     .contact-header {
-        order: 3; /* Zmiana kolejności w flexbox */
+        order: 3;
         margin-left: auto;
     }
     .hero-content{
@@ -805,21 +817,22 @@ ul {
 }
 .status-indicator {
         position: static; 
-        transform: none; /* Сбрасываем трансформации */
-        margin: 20px auto 0; /* Отступ сверху и центрирование */
-        width: max-content; /* Ширина по содержимому */
-        z-index: 2; /* Убедимся что поверх других элементов */
-        text-align: center; /* Центрируем текст */
+        transform: none; 
+        margin: 20px auto 0; 
+        width: max-content; 
+        z-index: 2; 
+        text-align: center; 
     }
 }
 
 @media (max-width: 480px) {
     .header .logo img {
-        height: 35px;
+         height: 95px;
+        width: 130px;
     }
 
    .main-nav {
-        top: 70px; /* Dla mniejszych ekranów */
+        top: 70px; 
         height: calc(100vh - 70px);
     }
     
